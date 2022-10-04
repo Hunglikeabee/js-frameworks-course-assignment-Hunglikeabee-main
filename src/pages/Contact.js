@@ -23,12 +23,10 @@ align-items: center;
 `
 
 export default function Contact() {
-    const emailRegEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
-
     const schema = yup.object().shape({
         firstname: yup.string().required("Please enter your first name").min(3, "Needs to be atleast 3 characters"),
         lastname: yup.string().required("Please enter your last name").min(4, "Needs to be atleast 4 characters"),
-        email: yup.string().required("Enter your email").matches(emailRegEx, "Enter a valid email: example@mail.com"),
+        email: yup.string().email("Enter a valid email: example@mail.com").required("Enter your email"),
         subject: yup.string().required("Choose subject"),
         message: yup.string().required("Enter your message").min(10, "Message needs to be atleast 10 characters")
     })
