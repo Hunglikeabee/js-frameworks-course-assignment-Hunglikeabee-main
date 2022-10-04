@@ -43,7 +43,7 @@ export default function Login() {
     })
     const [loggingInn, setLoggingInn] = useState(false)
     const [error, setError]  = useState(null)
-    const [auth, setAuth] = useContext(AuthContext)
+    const [, setAuth] = useContext(AuthContext)
 
     const tryLogin = async (data) => {
     setLoggingInn(true)

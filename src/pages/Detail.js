@@ -20,7 +20,7 @@ export default function Detail() {
   const url = APIURL + `products/${param}`
 
   const [details, setDetails] = useState([])
-  const [error, setError] = useState(null)
+  const [, setError] = useState(null)
 
   useEffect(() => {
     async function getDetail() {
