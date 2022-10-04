@@ -18,7 +18,7 @@ React.js
 
 ### Clone the repo:
     
-    git clone git@github.com:Noroff-FEU-Assignments/js-frameworks-course-assignment-Hunglikeabee.git
+    git clone git@github.com:Hunglikeabee/js-frameworks-course-assignment-Hunglikeabee-main.git
 
 ### Install the dependencies:
 
